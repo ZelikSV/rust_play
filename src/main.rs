@@ -1,3 +1,5 @@
+use rand::Rng;
+
 fn main() {
     // Числові типи даних:
     let _x: i32 = 42;
@@ -31,4 +33,8 @@ fn main() {
     let data = ("test", 100, 3.14);
 
     println!("{:?}", data);
+
+    let test_random = rand::thread_rng().gen_range(1..100);
+
+    println!("Random number: {}", test_random);
 }
