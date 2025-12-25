@@ -1,5 +1,13 @@
 use rand::Rng;
 
+fn one_function(x: i32) {
+    println!("One function: {}", x);
+}
+
+fn two_function(a: i32, b: i32) -> i32 {
+    a + b
+}
+
 fn main() {
     // Числові типи даних:
     let _x: i32 = 42;
@@ -37,4 +45,10 @@ fn main() {
     let test_random = rand::thread_rng().gen_range(1..100);
 
     println!("Random number: {}", test_random);
+
+    one_function(120);
+
+    let result = two_function(10, 20);
+
+    println!("Result: {}", result);
 }
